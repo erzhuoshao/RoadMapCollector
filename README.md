@@ -26,6 +26,7 @@
    1. Transform coordinates from bd09 to gcj02. -> coor/beijing-12-simplified-gcj.txt
    
 ## Examples:
+<img src="https://github.com/shaoerzhuo/RoadMapCollector/blob/main/patch/beijing-12/2-3.png" width="50%" height="50%">
 ![A patch of Beijing's road map](https://github.com/shaoerzhuo/RoadMapCollector/blob/main/patch/beijing-12/2-3.png =100x100)
 ![Beijing's original road map (Blue) and simplified road map (red)](https://github.com/shaoerzhuo/RoadMapCollector/blob/main/picture/beijing-12-simplified.png =100x100)
 
