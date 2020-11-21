@@ -1,8 +1,12 @@
 # RoadMapCollector
 
 ## Environment:
-| Python==3.7.0 | Pillow==8.0.1 | selenium==3.141.0 |
-| MATLAB R2019b | Google Chrome 87.0.4280.66 | Windows 10|
+* Windows 10
+* Python==3.7.0
+* Pillow==8.0.1
+* selenium==3.141.0
+* Google Chrome 87.0.4280.66
+* MATLAB R2019b
 
 ## Pipeline:
 0. Select target city and maplevel
@@ -22,6 +26,6 @@
    1. Transform coordinates from bd09 to gcj02. -> coor/beijing-12-simplified-gcj.txt
 
 ## Author:
-Erzhuo Shao and Jie Feng
-Erzhuo Shao: Wechat : shaoerzhuo, E-mail : sez20@mails.tsinghua.edu.cn
-Jie Feng : E-mail : fengj12ee@hotmail.com
+* Erzhuo Shao and Jie Feng
+* Erzhuo Shao: Wechat : shaoerzhuo, E-mail : sez20@mails.tsinghua.edu.cn
+* Jie Feng : E-mail : fengj12ee@hotmail.com
