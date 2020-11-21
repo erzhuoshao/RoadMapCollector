@@ -12,22 +12,22 @@
 0. Apply API console key in [BaiduMap](http://lbsyun.baidu.com/). Select target city and maplevel
    1. cityname = 'beijing'
    2. maplevel = 12 # not greater than 19, the higher, the finer(Please refer to [BaiduMapAPI](http://api.map.baidu.com/lbsapi/getpoint/index.html)).
-1. <p>python main.py cityname maplevel</p>
+1. ```python main.py cityname maplevel```
    1. Obtain boundary position of cityname
    1. Obtain patches in ./patch/cityname-maplevel.
    2. Obtain pasted road network picture/cityname-maplevel.png.
-2. <p>imageProcess.m</p>
+2. ```imageProcess.m```
    1. processing road network picture. Obtain pixel position of road network pixel/beijing-12.txt
-3. <p>python corner.py cityname maplevel</p>(Optional)
+3. ```python corner.py cityname maplevel```(Optional)
    1. Simplified the pixel-level edge by corner detection. Obtain pixel/beijing-12-simplified.txt
-4. <p>python pixel2coor.py cityname maplevel</p>
+4. ```python pixel2coor.py cityname maplevel```
    1. Utilizing baiduAPI to transform pixel-level position to longitude and latitude. Obtain coor/beijing-12-simplified.txt
-5. <p>python coorTransform.py cityname maplevel</p>(Optional)
+5. ```python coorTransform.py cityname maplevel```(Optional)
    1. Transform coordinates from bd09 to gcj02. -> coor/beijing-12-simplified-gcj.txt
    
 ## Examples:
 ### A patch of Beijing's roadmap.
-<img src="https://github.com/shaoerzhuo/RoadMapCollector/blob/main/patch/beijing-12/2-3.png" width="30%" height="30%">
+<img src="https://github.com/shaoerzhuo/RoadMapCollector/blob/main/patch/beijing-12/2-3.png" width="40%" height="40%">
 
 ### Original road map (blue) and simplified road map (red).
 <img src="https://github.com/shaoerzhuo/RoadMapCollector/blob/main/picture/beijing-12-simplified.png" width="50%" height="50%">
