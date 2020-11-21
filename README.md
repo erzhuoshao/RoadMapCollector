@@ -9,20 +9,20 @@
 * MATLAB R2019b
 
 ## Pipeline:
-0. Select target city and maplevel
+0. Apply API console key in [BaiduMap](http://lbsyun.baidu.com/). Select target city and maplevel
    1. cityname = 'beijing'
    2. maplevel = 12 # not greater than 19, the higher, the finer(Please refer to [BaiduMapAPI](http://api.map.baidu.com/lbsapi/getpoint/index.html)).
-1. python main.py cityname maplevel
+1. <p>python main.py cityname maplevel</p>
    1. Obtain boundary position of cityname
    1. Obtain patches in ./patch/cityname-maplevel.
    2. Obtain pasted road network picture/cityname-maplevel.png.
-2. run imageProcess.m
+2. <p>imageProcess.m</p>
    1. processing road network picture. Obtain pixel position of road network pixel/beijing-12.txt
-3. (Optional) python corner.py cityname maplevel
+3. <p>python corner.py cityname maplevel</p>(Optional)
    1. Simplified the pixel-level edge by corner detection. Obtain pixel/beijing-12-simplified.txt
-4. python pixel2coor.py cityname maplevel
+4. <p>python pixel2coor.py cityname maplevel</p>
    1. Utilizing baiduAPI to transform pixel-level position to longitude and latitude. Obtain coor/beijing-12-simplified.txt
-5. (Optional) python coorTransform.py cityname maplevel
+5. <p>python coorTransform.py cityname maplevel</p>(Optional)
    1. Transform coordinates from bd09 to gcj02. -> coor/beijing-12-simplified-gcj.txt
    
 ## Examples:
