@@ -24,6 +24,10 @@
    1. Utilizing baiduAPI to transform pixel-level position to longitude and latitude. Obtain coor/beijing-12-simplified.txt
 5. (Optional) python coorTransform.py cityname maplevel
    1. Transform coordinates from bd09 to gcj02. -> coor/beijing-12-simplified-gcj.txt
+   
+## Examples:
+![A patch of Beijing's road map](https://github.com/shaoerzhuo/RoadMapCollector/blob/main/patch/beijing-12/2-3.png)
+![Beijing's original road map (Blue) and simplified road map (red)](https://github.com/shaoerzhuo/RoadMapCollector/blob/main/picture/beijing-12-simplified.png)
 
 ## Author:
 * Erzhuo Shao and Jie Feng
