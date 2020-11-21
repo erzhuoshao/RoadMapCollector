@@ -13,15 +13,16 @@
    1. cityname = 'beijing'
    2. maplevel = 12 # not greater than 19, the higher, the finer(Please refer to [BaiduMapAPI](http://api.map.baidu.com/lbsapi/getpoint/index.html)).
 1. ```python main.py cityname maplevel```
-   1. Obtain boundary position of cityname
-   1. Obtain patches in ./patch/cityname-maplevel.
-   2. Obtain pasted road network picture/cityname-maplevel.png.
+   1. Coordinate boundary of cityname. -> bound/cityname.json
+   2. Pixel boundary of cityname. -> dpi/cityname.json
+   3. Roadmap patches of cityname. -> patch/cityname-maplevel.
+   4. Complete road map picture. -> picture/cityname-maplevel.png.
 2. ```imageProcess.m```
-   1. processing road network picture. Obtain pixel position of road network pixel/beijing-12.txt
+   1. processing road network picture. Pixel position of road network. -> pixel/beijing-12.txt
 3. ```python corner.py cityname maplevel```(Optional)
-   1. Simplified the pixel-level edge by corner detection. Obtain pixel/beijing-12-simplified.txt
+   1. Simplified the pixel-level edge by corner detection. -> pixel/beijing-12-simplified.txt
 4. ```python pixel2coor.py cityname maplevel```
-   1. Utilizing baiduAPI to transform pixel-level position to longitude and latitude. Obtain coor/beijing-12-simplified.txt
+   1. Utilizing baiduAPI to transform pixel-level position to longitude and latitude. -> coor/beijing-12-simplified.txt
 5. ```python coorTransform.py cityname maplevel```(Optional)
    1. Transform coordinates from bd09 to gcj02. -> coor/beijing-12-simplified-gcj.txt
    
