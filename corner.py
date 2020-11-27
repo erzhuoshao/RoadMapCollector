@@ -27,7 +27,7 @@ corner = corner[:, :, 0] * corner[:, :, 1] * corner[:, :, 2]
 
 with open(pixel_path, 'r') as fid:
 	with open(pixel_simplified_path, 'w') as fid2:
-		fid2.write('0 0 ' + str(np.shape(corner)[0] - 1) + ' 0 ' + str(np.shape(corner)[0] - 1) + ' ' + str(np.shape(corner)[1] - 1) + ' 0 ' + str(np.shape(corner)[1] - 1) + ' ')
+		fid2.write('0 0 ' + str(np.shape(corner)[0] - 1) + ' 0 ' + str(np.shape(corner)[0] - 1) + ' ' + str(np.shape(corner)[1] - 1) + ' 0 ' + str(np.shape(corner)[1] - 1) + ' 0 0\n')
 		data = fid.read()[:-1].split('\n')
 		for line in data[1:]:
 			line = [int(each) for each in line.split(' ')]
